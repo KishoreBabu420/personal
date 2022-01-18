@@ -1,5 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
 
+/*Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --heading: #1e1964;
+  --sky-blue: #34a1cd;
+  --purple: #55527c;
+  --grey: #b4b2c5;
+  --pink: #ea4c89;
+  --background: #f4f3ff;
+  --light-pink: #ecbcc1;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
+  color: #1c2042;
+  background: var(--background);
+}
+li {
+  list-style: none;
+}
+
+li:hover {
+  font-weight: 700;
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Project CSS  */
+.navbar {
+  width: 100%;
+  padding: 30px;
+  display: flex; /*By Default it will align them in a single row  */
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.brand .logo {
+  width: 50px;
+}
+
+.navbar .nav-list ul,
+.navbar .social-icons ul {
+  display: flex;
+}
+
+.navbar .nav-list ul li,
+.navbar .social-icons ul li {
+  margin: 0px 30px;
+}
+
+.navbar .nav-list ul li a,
+.navbar .social-icons ul li a {
+  color: var(--purple);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+social-icons ul li a:hover {
+  transform: scale(1.2);
 }
