@@ -20,6 +20,9 @@
   </head>
   <body>
     <!-- Navbar Start -->
+    <div class="mobile-brand">
+      <img src="./assests/images/logo.png" alt="logo" class="logo" />
+    </div>
     <nav class="navbar">
       <div class="brand">
         <img src="./assests/images/logo.png" alt="logo" class="logo" />
@@ -58,6 +61,9 @@
         </ul>
       </div>
     </nav>
+    <div class="btn-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
     <!-- Navbar End -->
     <!-- header Start -->
     <header class="header container">
@@ -177,6 +183,38 @@
       </div>
     </section>
     <!-- Projects End -->
+    <!-- Contact Start -->
+    <footer class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <h3>
+          <a href="mailto: hello@abc.com"
+            ><i class="fas fa-envelope"></i> hello@abc.com</a
+          >
+        </h3>
+        <div class="quick-links">
+          <ul>
+            <li>Home</li>
+            <li>SkillS</li>
+            <li>Projects</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>&copy; 2022 Kishore Babu</p>
+    </div>
+    <!-- Contact End -->
+
+    <script>
+      const btnToggle = document.querySelector('.btn-toggle');
+      const navbar = document.querySelector('.navbar');
+
+      btnToggle.addEventListener('click', () => {
+        navbar.classList.toggle('mobile');
+      });
+    </script>
   </body>
 </html>
 <!-- inline CSS -->

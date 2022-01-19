@@ -108,8 +108,22 @@ a {
   cursor: pointer;
 }
 
+.mobile-brand img {
+  display: none;
+}
+
 social-icons ul li a:hover {
   transform: scale(1.2);
+}
+
+.btn-toggle i {
+  font-size: 30px;
+  color: var(--purple);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
 }
 /* Navbar CSS */
 
@@ -257,4 +271,125 @@ social-icons ul li a:hover {
 
 .projects .grid-box:hover .hover {
   transform: scaleX(1);
+}
+
+/* .Projects */
+
+/* Footer */
+.contact .container {
+  margin-top: 80px;
+  text-align: center;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.contact .container h2 {
+  margin: 40px 0px;
+  font-size: 32px;
+}
+
+.contact h3 {
+  margin: 20px auto;
+}
+
+.contact h3 a {
+  color: var(--sky-blue);
+  font-size: 24px;
+}
+
+.contact h3 a .fas {
+  margin-right: 10px;
+}
+.contact .quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+.contact .quick-links ul {
+  display: flex;
+}
+
+.contact .quick-links ul li {
+  margin: 0 20px;
+  color: var(--purple);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copyright p {
+  text-align: center;
+  color: var(--purple);
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-weight: 32px;
+  }
+
+  /* Navabar */
+
+  .mobile-brand img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+  }
+  .navbar {
+    height: 100vh;
+    flex-direction: column;
+    display: none;
+    justify-content: space-around;
+  }
+
+  .navbar .brand {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+  }
+
+  .nav-list ul li {
+    margin-top: 20px !important;
+  }
+  .nav-list ul li a {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .social-icons {
+    margin-bottom: 10px;
+  }
+
+  .btn-toggle i {
+    display: block;
+  }
+
+  .header {
+    height: 100%;
+    margin-top: 120px;
+  }
+
+  .header .row {
+    flex-direction: column;
+  }
+
+  .header .col-1 {
+    padding: 20px;
+  }
+
+  .header .col-2 img {
+    max-width: 90%;
+  }
 }
